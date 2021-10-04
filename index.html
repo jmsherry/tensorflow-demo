@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TensorFlow Demo</title>
+  <style>
+    .analysing {
+      margin-inline-start: 15px;
+    }
+    main section {
+      margin-block-end: 15px;
+    }
+    img,
+    canvas {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+  <script defer src="/main.js"></script>
+</head>
+<body>
+    <header class="page-header">
+      <h1>TensorFlow.js</h1>
+    </header>
+    <main>
+      <section class="img-url">
+        <form name="image-url-changer">
+        <label for="img-url">Select an image url</label>
+        <input type="text" id="img-url" placeholder="e.g. https://mysite.com/photos/cat.jpg">
+        <button type="reset">Reset</button>
+        <button type="submit" id="update-url">Update image</button>
+      </form>
+      </section>
+      <section class="img-container">
+        <img id="img" src="https://media.gettyimages.com/photos/group-of-people-eating-at-a-restaurant-picture-id981194018" alt="" crossorigin="anonymous">
+      </section>
+      <section class="controls">
+        <button id="analyse">Analyse</button>
+      </section>
+      
+    </main>
+    <footer class="page-footer">
+      <p><small>&copy; The Jump Digital School. All rights reserved</small></p>
+    </footer>
+</body>
+</html>
