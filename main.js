@@ -1,3 +1,5 @@
+// import tfjs from "https://esm.sh/@tensorflow/tfjs"
+// import cocoSsd from "https://esm.sh/@tensorflow-models/coco-ssd"
 const img = document.querySelector("#img");
 const imgMount = document.querySelector(".img-container");
 const urlInput = document.getElementById("img-url");
